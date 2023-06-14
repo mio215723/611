@@ -1,0 +1,23 @@
+# Blender 3.3.6 MTL File: 'cat-hand.blend'
+# www.blender.org
+
+newmtl Cat.002
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd /Users/e215726/Downloads/Cat_v1_L3.123cc81ac858-7d2c-4c7e-bf80-81982996d26d/Cat_diffuse.jpg
+map_Bump -bm 1.000000 /Users/e215726/Downloads/Cat_v1_L3.123cc81ac858-7d2c-4c7e-bf80-81982996d26d/Cat_bump.jpg
+
+newmtl マテリアル
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
