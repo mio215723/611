@@ -4,10 +4,11 @@ using UnityEngine;
 using OculusSampleFramework;
 using UnityEngine.SceneManagement;
 
-public class OculusControllerInput_GameOver : MonoBehaviour
+public class OculusControllerInput_GameClear : MonoBehaviour
 {    
     public AudioClip sound;
     AudioSource audioSource;
+    
     private void Start()
     {
         //Componentを取得

@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
+    public AudioClip sound_ramen;
+    public AudioClip sound_kono;
+    AudioSource audioSource;
+
     private int num_of_maked_ramen; //作ったラーメンの数
     private float sec_of_touching_wh; //ラーメンに熱湯をそそいた秒数
     private bool is_having_ramen; //ラーメンを持っているかどうか
@@ -12,6 +16,9 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Componentを取得
+        audioSource = GetComponent<AudioSource>();
+
         num_of_maked_ramen = 0;
         sec_of_touching_wh = 0.0f;
         is_having_ramen = false;
@@ -34,6 +41,7 @@ public class Game : MonoBehaviour
         {   //ラーメンに衝突した場合
             if(is_having_ramen == false)
             {
+                audioSource.PlayOneShot(sound_ramen);
                 is_having_ramen = true;
                 Destroy(collision.gameObject); //とったラーメンを消す
             }
@@ -50,6 +58,7 @@ public class Game : MonoBehaviour
             {   //河野先生に衝突した場合
                 if(is_having_ramen == true)
                 {
+                    audioSource.PlayOneShot(sound_kono);
                     is_having_ramen = false;
                     num_of_maked_ramen = num_of_maked_ramen + 1;
 

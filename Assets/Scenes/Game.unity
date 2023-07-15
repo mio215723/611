@@ -4753,6 +4753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67040675f9f7247579925a7476fc8ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound_ramen: {fileID: 8300000, guid: d741697681fd246eba5af22f1819f523, type: 3}
+  sound_kono: {fileID: 8300000, guid: 38a53053fde6a4927b63fcf31ded9b4e, type: 3}
 --- !u!65 &932130814
 BoxCollider:
   m_ObjectHideFlags: 0
